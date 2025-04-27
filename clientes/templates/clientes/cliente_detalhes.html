@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+</head>
+<body>
+    <h1>Detalhes do Cliente</h1>
+   
+    <h2>Nome: {{ cliente.nome }}</h2>
+    <h3>Sobrenome: {{ cliente.sobrenome }}</h3>
+    <h3>CPF: {{ cliente.cpf }}</h3>
+    <h3>Gênero: {{ cliente.genero }}</h3>
+    <h3>Estado civil: {{ cliente.estado_civil }}</h3>
+    <h3>Telefone: {{ cliente.telefone }}</h3>
+    <h3>Email: {{ cliente.email }}</h3>
+    <h3>Rua: {{ cliente.endereco.rua }}</h3>
+    <h3>Número: {{ cliente.endereco.numero }}</h3>
+    <h3>Complemento: {{ cliente.endereco.complemento }}</h3>
+    <h3>Bairro: {{ cliente.endereco.bairro }}</h3>
+    <h3>Cidade: {{ cliente.endereco.cidade }}</h3>
+    <h3>Estado: {{ cliente.endereco.estado }}</h3>
+    <h3>CEP: {{ cliente.endereco.cep }}</h3>
+
+    <p><a href="{% url 'index' %}"> Voltar para a Home </a></p>
+</body>
+</html>
